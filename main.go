@@ -19,9 +19,9 @@ func main() {
 
 func whoAmI(response http.ResponseWriter, r *http.Request) {
 	who := []whoami{
-		whoami{Name: "Michael Levan",
-			Title: "Kubernetes Engineer",
-			State: "NJ",
+		whoami{Name: "Kennedy Kpogli",
+			Title: "DevOps Engineer",
+			State: "TX",
 		},
 	}
 
@@ -36,9 +36,9 @@ func homePage(response http.ResponseWriter, r *http.Request) {
 }
 
 func aboutMe(response http.ResponseWriter, r *http.Request) {
-	who := "MichaelLevan"
+	who := "Kennedy Kpogli"
 
-	fmt.Fprintf(response, "A little bit about Michael Levan...")
+	fmt.Fprintf(response, "A little bit about Kennedy Kpogli...")
 	fmt.Println("Endpoint Hit: ", who)
 }
 
